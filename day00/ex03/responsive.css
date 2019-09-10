@@ -1,0 +1,93 @@
+body {
+	background-image: url(https://azeheb.com.br/blog/wp-content/uploads/2017/10/os-atomos-do-seu-corpo-vieram-de-outras-galaxias.jpg);
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	margin: 0 auto;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-size: 32pt;
+}
+#table1 tr td {
+    background-color:white;
+    width: 45px;
+    Height: 45px;
+    cursor: pointer;
+    border-style:hidden;
+    border-width: 1px;
+    display:-ms-grid;
+}
+#table1 tr td.empty {
+    background-color: transparent;
+    cursor: auto;
+    border: none;
+    text-align: left;
+}
+#table1 tr td.green {
+    background-color:greenyellow;
+}
+#table1 tr td.blue {
+    background-color:cadetblue;
+}
+#table1 tr td.gray {
+    background-color:gray;
+}				  
+#table1 tr td.pink {
+    background-color:palevioletred;
+}
+#table1 tr td.orange {
+    background-color:orange;
+}
+#table1 tr td.yellow {
+    background-color:yellow;
+}
+#table1 tr td.brown {
+    background-color:brown;
+}
+#table1 tr td.l_brown {
+    background-color:sienna;
+}
+#table1 tr td.purple {
+    background-color:purple;
+}
+#table1 tr td.cyan {
+    background-color:cyan;
+}
+#table1 tr.spacer td {
+    height: 10px;
+}
+#table1 tr td an {
+    font-size: 12px;
+    display: block;
+    text-align: left;
+    font-weight: normal;
+}
+#table1 tr td aw {
+    font-size: 12px;
+    display: block;
+    text-align: right;
+    font-weight: normal;
+}
+#table1 tr td {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media all and (max-width:768px){
+    table,tr, td, tbody, td p table div, table table{
+		width:100%!important;
+        display:block;
+        text-align:center;
+	}
+	#table1 tr td an {
+		padding-left: 5px;
+	}
+	#table1 tr td aw {
+		padding-right: 5px;
+	}
+}
