@@ -26,7 +26,7 @@
 			return ($r);
 		}
 		else
-			return (sizeof($a1) == $i ? 1 : -1); //If the string a1 reached the end, it means it's smaller than a2. Comes first.
+			return (sizeof($a1) == $i ? -1 : 1); //If the string a1 reached the end, it means it's smaller than a2. Comes first.
 	}
 	array_shift($argv); //Remove the first element (file name).
 	if ($argc > 1)
