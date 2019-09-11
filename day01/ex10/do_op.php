@@ -17,4 +17,6 @@
 		else if ($ar[1] == '%')
 			echo $ar[0] % $ar[2] . "\n";
 	}
+	else
+		echo "Incorrect Parameters\n";
 ?>
