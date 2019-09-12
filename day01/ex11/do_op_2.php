@@ -54,8 +54,7 @@
 		else if ($s == '*')
 			echo $nbrs[0] * $nbrs[1] . "\n";
 		else if ($s == '%')
-			echo (($nbrs[1] < 0 && $nbrs[0] > 0) || ($nbrs[1] > 0 && $nbrs[0] < 0) ?
-				(($nbrs[0] % $nbrs[1]) * -1) : $nbrs[0] % $nbrs[1]) . "\n";
+			echo $nbrs[0] % $nbrs[1] . "\n";
 		else
 			echo "Syntax Error\n";
 	}
