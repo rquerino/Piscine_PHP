@@ -4,10 +4,19 @@
 		$i = 0;
 		$size = strlen($argv[1]);
 		$nbrs = array();
+		$s = NULL;
 		while ($i < $size && sizeof($nbrs) < 2)
 		{
 			if ($argv[1][$i] == '+' || $argv[1][$i] == '-' || $argv[1][$i] == '/' || $argv[1][$i] == '*' || $argv[1][$i] == '%')
-				$s = $argv[1][$i];
+			{
+				if ($s == NULL)
+					$s = $argv[1][$i];
+				else
+				{
+					echo "Syntax Error\n";
+					return ;
+				}
+			}
 			else if (($argv[1][$i] >= 'a' && $argv[1][$i] <= 'z') || ($argv[1][$i] >= 'A' && $argv[1][$i] <= 'Z'))
 			{
 				echo "Syntax Error\n";
