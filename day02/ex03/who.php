@@ -9,6 +9,6 @@
 		$obj = preg_split('/\s+/', $av);
 		$date = date('M d', time());
 		$tty = ($obj[1] == "console") ? $obj[1] : "tty".$obj[1];
-		echo $obj[0] . ' ' . str_pad($tty, 8) . ' ' . $date . ' ' . $obj[3] . "\n";
+		echo $obj[0] . ' ' . str_pad($tty, 8) . ' ' . $date . ' ' . $obj[3] . " \n";
 	}
 ?>
