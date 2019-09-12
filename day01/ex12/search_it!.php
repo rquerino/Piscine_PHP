@@ -6,7 +6,6 @@
 		$ar = array();
 		array_shift($argv);
 		$res = NULL;
-		$i = 0;
 		foreach ($argv as $av)
 		{
 			$ar = explode(":", $av);

@@ -40,7 +40,6 @@
 			}
 		}
 		usort($ar, "ft_my_sorting");
-		sort($ar_special);
 		foreach($ar as $v)
 			echo "$v\n";
 	}
