@@ -1,0 +1,12 @@
+{
+  "name": "day03",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Renato Querino <renatoqrn@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1"
+  }
+}
