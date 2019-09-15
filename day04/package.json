@@ -1,0 +1,15 @@
+{
+  "name": "day04",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Renato Querino <renatoqrn@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  }
+}
