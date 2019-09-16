@@ -1,5 +1,5 @@
 SELECT
-  *
+  name
 FROM
   distrib
 WHERE
