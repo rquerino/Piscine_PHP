@@ -1,12 +1,4 @@
 SELECT
- ROUND(AVG(nb_seats)) AS 'Average'
+  ROUND(AVG(nb_seats)) AS 'average'
 FROM
-  (
-    SELECT
-      id_cinema,
-      SUM(nb_seats) as nb_seats
-    FROM
-      cinema
-    GROUP BY
-      id_cinema
-  ) formatted_table;
+  cinema;

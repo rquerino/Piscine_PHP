@@ -1,1 +1,1 @@
-CREATE DATABASE db_rquerino;
+CREATE DATABASE IF NOT EXISTS db_rquerino;
