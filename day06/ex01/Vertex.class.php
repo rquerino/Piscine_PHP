@@ -26,7 +26,7 @@
 				));
 			}
 			if (Vertex::$verbose)
-				printf("%s constructed.\n", $this);
+				printf("%s constructed\n", $this);
 		}
 
 		function setX($x) 			{	$this->_x = $x;			}
@@ -60,7 +60,7 @@
 
 		function __destruct() {
 			if (Vertex::$verbose)
-                printf("%s destructed.\n", $this);
+                printf("%s destructed\n", $this);
 		}
 	}
 ?>

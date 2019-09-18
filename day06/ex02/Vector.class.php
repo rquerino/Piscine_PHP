@@ -25,7 +25,7 @@
 			$this->_y = $dest->getY() - $orig->getY();
 			$this->_z = $dest->getZ() - $orig->getZ();
 			if (Vector::$verbose)
-				printf("%s constructed.\n", $this);
+				printf("%s constructed\n", $this);
 		}
 
 		// Read-only
@@ -102,20 +102,20 @@
 		}
 
 		//returns the scalar multiplication of both vectors.
-		function dotProduct(Vector $mult)
+		function dotProduct(Vector $dot)
 		{
-			$res = new Vector(array('dest' => new Vertex(array(
-				'x' => $this->_x * $mult->getX(),
-				'y' => $this->_y * $mult->getY(),
-				'z' => $this->_z * $mult->getZ()
-			))));
-			return ($res);
+			return (
+				$this->_x * $dot->getX() +
+				$this->_y * $dot->getY() +
+				$this->_z * $dot->getZ());
 		}
 		
-		//returns the angle’sAppendix cosine between both vectors
-		function cos(Vector $v)
+		//returns the angle’s appendix cosine between both vectors
+		// Product of the 2 vectors / (multiplication of their magnitudes)
+		function cos(Vector $sec)
 		{
-			return ($this->dotProduct($v) / ($this->magnitude() * $v->magnitude()));
+			$cos = $this->dotProduct($sec) / ($this->magnitude() * $sec->magnitude());
+			return ($cos);
 		}
 
 		//returns the cross multiplication of both vectors.
@@ -135,7 +135,7 @@
 
 		function __destruct() {
 			if (Vector::$verbose)
-                printf("%s destructed.\n", $this);
+                printf("%s destructed\n", $this);
 		}
 	}
 ?>
