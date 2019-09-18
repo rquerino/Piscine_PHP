@@ -1,0 +1,26 @@
+<- Vector ----------------------------------------------------------------------
+The Vector class handles directions and movements.
+
+An instance can be contructed from either an array containing the points x, y, z, w(optional) and color(RGB or Red, Green, Blue)(Also optional):
+new Vertex( array( 'x' => 1, 'y' => 1, 'z' => 1, 'w' => 1, 
+    color ( array ( 'red' => 255, 'green' => 255, 'blue' => 255 )) ) );
+    or
+    color ( array( 'RGB' => 12345 ) );
+
+    - If no Color is passed as parameter, it's set to white.
+    - If no 'w' value is passed as parameter, it's set to 1.
+    - If any value other than numbers is passed as parameter for x,y,z,w, it's undefined behaviour.
+
+The Class Color handles the color array:
+    Red, green, blue constitutives and RGB values are converted to intergers.
+    Negative or > to 255 color constitutives are left as is.
+    Any other use is undefined behaviour.
+
+The class provides the following methods :
+
+    - Getters for all private variables: x, y, z, w, color:
+        Gets the value of the variables.
+
+    - Setters for all private variables: x, y, z, w, color.
+        Sets a new value for the variables.
+---------------------------------------------------------------------- Vector ->
