@@ -28,7 +28,7 @@
 				printf("%s constructed\n", $this);
 		}
 
-		// Read-only
+		// Read-only class
 		function getX() {	return $this->_x;	}
 		function getY() {	return $this->_y;	}
 		function getZ() {	return $this->_z;	}

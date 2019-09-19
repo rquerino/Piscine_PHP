@@ -1,3 +1,4 @@
+
 <- Vector ----------------------------------------------------------------------
 The Vector class handles directions and movements.
 
