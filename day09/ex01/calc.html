@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>day09/ex01/calc.html</title>
+</head>
+<body>
+
+	<!-- text input field in the left, select field with operators, text field in the righ, submit button "Try me!" -->
+	<input type="text" id="left">
+	<select id="operators">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+		<option value="%">%</option>
+	</select>
+	<input type="text" id="right">
+	<input type="submit" id="submit" value="Try me!">
+	
+	<script>
+		const left = document.getElementById('left');
+		const operators = document.getElementById('operators');
+		const right = document.getElementById('right');
+		const submit = document.getElementById('submit');
+	
+		let clock = 0;
+	
+		submit.addEventListener('click', (_) => {
+			
+			//Check if the number is positive and remove spaces
+			if (!left.value.trim().match(/^[0-9]+$/))
+				return sendMessage('Error :(');
+	
+			if (!right.value.trim().match(/^[0-9]+$/))
+				return sendMessage('Error :(');
+	
+			var nbr1 = Number(left.value.trim());
+			var nbr2 = Number(right.value.trim());
+			var opr = operators.value;
+	
+			//Check if / or % by 0, VEGETA
+			if ((opr === '/' || opr === '%') && nbr2 == 0)
+				return sendMessage('It\'s over 9000!');
+			//Calculates the valid parameters
+			var res = eval(`${nbr1}${opr}${nbr2}`);
+			sendMessage(res);
+		});
+
+		//Pop-up every 30s
+		setInterval(() => window.alert('Please, use me...'), 30000);
+		
+		//Function to print message in the log and popup
+		function sendMessage(msg) {
+			console.log(msg);
+			window.alert(msg);
+		}
+	
+	</script>
+	
+</body>
+</html>
