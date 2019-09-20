@@ -1,17 +1,18 @@
 <?php
 	abstract class Fighter
 	{
-		abstract function fight($target);
 		public $type_soldier;
 
-		public function __construct($type_s)
+		abstract function fight($target);
+
+		public function __construct($type)
 		{
-			$this->type_warrior = $type_s;
+			$this->type_soldier = $type;
 		}
 
 		public function getType()
 		{
-			return ($this->type_warrior);
+			return ($this->type_soldier);
 		}
 	}
 ?>
